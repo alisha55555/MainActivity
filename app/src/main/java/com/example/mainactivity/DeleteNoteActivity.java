@@ -26,6 +26,8 @@ public class DeleteNoteActivity extends AppCompatActivity {
                 MainActivity.notes.remove(position);
                 adapter.notifyDataSetChanged();
                 Toast.makeText(DeleteNoteActivity.this, "Note Deleted", Toast.LENGTH_SHORT).show();
+
+                finish();
             }
         });
     }
